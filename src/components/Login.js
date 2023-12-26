@@ -92,18 +92,18 @@ const Login = () => {
                         
                         {!SignIn&&<input type='text'
                          placeholder='Name'
-                          className=' p-2 m-2   w-full bg-transparent   rounded-t-md border-b-4 border-blue-200 border-transparent placeholder-blue-200'
+                          className=' text-white p-2 m-2   w-full bg-transparent   rounded-t-md border-b-4 border-blue-200 border-transparent placeholder-blue-200'
                            style={{width:'300px',backgroundColor: 'rgba(255,255,255,0.1)' }}
                             />}
 
                         <input type='text'
                         ref={email}
                          placeholder='Email Address'
-                          className=' p-2 m-2   w-full bg-transparent   rounded-t-md border-b-4 border-blue-200 border-transparent placeholder-blue-200'
+                          className=' text-white p-2 m-2   w-full bg-transparent   rounded-t-md border-b-4 border-blue-200 border-transparent placeholder-blue-200'
                            style={{width:'300px',backgroundColor: 'rgba(255,255,255,0.1)' }}
                             />
 
-                        <input type='password'  ref={password} placeholder='Password' className='p-2 m-2 w-full bg-transparent  border-transparent border-b-4 border-blue-200 rounded-t-md placeholder-blue-200' style={{width:'300px', backgroundColor: 'rgba(255,255,255,0.1)'}} />
+                        <input type='password'  ref={password} placeholder='Password' className=' text-white p-2 m-2 w-full bg-transparent  border-transparent border-b-4 border-blue-200 rounded-t-md placeholder-blue-200' style={{width:'300px', backgroundColor: 'rgba(255,255,255,0.1)'}} />
                         <p className='text-red-500 font-bold'>{message}</p>
 
                         <button onSubmit={(e)=>{e.preventDefault()}} onClick={()=>{formValidate()}} className=' rounded-xl bg-transparent  text-white ml-2  hover:text-white py-3 mt-5 px-10 border border-blue-500  text-blue-500'>{SignIn?"SignIn":"SignUp"}</button>
