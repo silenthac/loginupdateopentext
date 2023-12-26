@@ -112,8 +112,8 @@ const Login = () => {
 
 
                 <div className='flex justify-around mt-10'>
-                   {SignIn ?<h1  onClick={()=>{toogleSignIn(!SignIn)}} className='text-white cursor-pointer'>New User? Sign Up..</h1>:<h1  onClick={()=>{toogleSignIn(!SignIn)}} className='text-white cursor-pointer'>Already Registered? Sign In..</h1>}
-                   {SignIn&& <h1 className='text-white'>Forgot password?</h1>}
+                   {SignIn ?<h1  onClick={()=>{toogleSignIn(!SignIn)}} className='text-white cursor-pointer hover:text-blue-500'>New User? Sign Up..</h1>:<h1  onClick={()=>{toogleSignIn(!SignIn)}} className='text-white cursor-pointer'>Already Registered? Sign In..</h1>}
+                   {SignIn&& <h1 className='text-white '>Forgot password?</h1>}
                 </div>
 
                 <Footer />
